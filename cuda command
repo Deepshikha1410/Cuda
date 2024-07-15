@@ -1,0 +1,5 @@
+first check the gcc version
+then install gcc vesion
+then apply this cuda command
+spack load cuda
+spack load cuda/hash name

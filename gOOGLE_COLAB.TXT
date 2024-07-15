@@ -1,0 +1,9 @@
+gogle collab command for Gpu
+!nvidia-smi
+!sudo apt update
+!sudo apt purge *nvidia* -y
+!sudo apt install nvidia-driver-530 -y
+!clinfo
+!apt-get install opencl-headers
+!apt-get install ocl-icd-libopencl1
+!sudo find /usr/ -name c1.h 2>/dev/null
