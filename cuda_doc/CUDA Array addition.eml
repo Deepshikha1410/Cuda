@@ -1,0 +1,214 @@
+Delivered-To: waghmaress162000@gmail.com
+Received: by 2002:a05:7300:6881:b0:126:108f:2651 with SMTP id v1csp889997dyj;
+        Thu, 23 May 2024 06:53:25 -0700 (PDT)
+X-Received: by 2002:a05:6122:2187:b0:4d8:7ae2:107 with SMTP id 71dfb90a1353d-4e2185f129fmr6033501e0c.10.1716472405125;
+        Thu, 23 May 2024 06:53:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1716472405; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rRkaRxHmPwXmuR9WK9AqKUYZmW5tbHFURYUJORjxcI8ulGE1YxzDnrm2B5Z3GcbJq7
+         bNsHhXxfbPc3E1wYMnLja3mz2NOAGGrr5Ep6MkPHDV7E3my7LXVxRkxIXLB6qFv1kDON
+         6v3Kz3VYjyo8PnHs5IVPJnO32GVGBpD5l02DISmtkctCuAkEorDKmArWjxWqbLZWSl+j
+         cAxbrrTG6JO4BaIJ5ufkD+j88jnFuo7VPQZ+3HT9nwTvAA/XkUD600N24+ysL72PKeS2
+         NmS6lUCaxanagfEjGeA/bHltwaWpFJNZOc+z7J0qbhj2d5Fv9iFAHOvGgPZGUQcHefSc
+         +0JQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Yw+Y1TqShOlHN1xWXuzex4s/3vU6zOXP59w5YzBcIsk=;
+        fh=q5yRrsNDlVIfmBKy50QGuTUONy+lfXaimjX2gj8NcZs=;
+        b=udXTtVfMUna7+54NKieEiUy7lTsi06N14NI1TgFifTB/505nQz1wIiIlhlaDPEJoGN
+         ZgjxwksHFMET6pU0QXRhkmnRyGwVE854Xk0T4Fc7aIKYu7QxzlUrqB3APu9mIMH9X6P+
+         5eyZODYNmbJZnz0oRZUyENqUPTs4jbdqwxuD2l2FL6AbOXEN3lKCaB1gtonpjykbdH1b
+         aCu4hy+gMENF7DjuvufqcxJMhzC5fP/rqhV+YXCp3n/n7R8YPd/dk9TBW/RQklJ9yJ6A
+         wX4tDgEvNyPOqT7VG6fcfiLWyMjHP9921jgWDdWcz17doxltDHBwyraMBpHv86DWBHrj
+         F0Gg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=NBcvM+0C;
+       spf=pass (google.com: domain of atulkahatecdac@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=atulkahatecdac@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <atulkahatecdac@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 71dfb90a1353d-4df7c101ccesor6232552e0c.7.2024.05.23.06.53.24
+        for <waghmaress162000@gmail.com>
+        (Google Transport Security);
+        Thu, 23 May 2024 06:53:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of atulkahatecdac@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=NBcvM+0C;
+       spf=pass (google.com: domain of atulkahatecdac@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=atulkahatecdac@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1716472404; x=1717077204; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Yw+Y1TqShOlHN1xWXuzex4s/3vU6zOXP59w5YzBcIsk=;
+        b=NBcvM+0CFHNWG2tWjARhJ9BdA4h4NCZaxnq8/ESSvqY/CcKIFHM9rPlQpmHU+Vol8j
+         HoaO+u2zyuf0ojkrlL2ifmZaadq/3PNERLgOZskUxqVqb4dOE3KYSAVGPyHhHS0mGjSl
+         3QdLeaB7i/pBI2MB/IkxAiUF6Ur1oWiHA/NTbzEBk2uZRiZsLzZEx4TkZceaeGHUNYM9
+         CI7QuGXeGWKPif2vfpdFBv8FrGAsUFgD7e2Z8iUekclavH7Yrz6XD3sbiig5azOr/FPe
+         sPoqqYsPzXYSNT2hQDH0rAj/niXPgpefsimi0S1imrhrcpjCZVFhrKhtezyaqHv3n9sA
+         /AQg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1716472404; x=1717077204;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Yw+Y1TqShOlHN1xWXuzex4s/3vU6zOXP59w5YzBcIsk=;
+        b=kwaks4PMiDA0iu1vj81jwt2BHFejCxurhJ1QBodKNowUldqcfc5dyh6ryXWioFc6PN
+         KC7xJaAY4nxDUYG7rmrve2mDcuVvCexTz/6WUwDz/Z8ruwiCrQCOoPMTaIcjr0nLNgJD
+         DKHslWPVVCeWX5Y378RgRTL6VWqkjXLjYku3IKt/djFuyWPiF0hFLtt+Rf9lnToiRcUv
+         W79d2i0Jc1zlIJdYwNO/2Hfjotjc9UKzBM85g6EwDvT13T2/EYwTiqKBaeTebicM0Y2P
+         pbvm2OEdUnliVZjjK/cY1ZV8DNYde38QN0iQbZgpohNCylikwPCb6xJPA+wulslaArAa
+         3XDw==
+X-Gm-Message-State: AOJu0YzomJWq5utOwa8Vk+7UjfwAMCk3R++dJGz14av3TpqVRU3XyCOl
+	rDDGL6nfv8VCcbrCR8f322qyWe1tQmnXF2PUW2ES8XPeHq7n3gJDI1HCTvaUOT5vhUl2NdCWys9
+	PzxxRbJgGawnFkJyEpMSHNHbMqdBld4iy
+X-Google-Smtp-Source: AGHT+IEf2dNQYNW+LzezW85iK5GRaw9QOxOS94K1w53cxntYKpz8QzMp7CWbpVQYYTjiTRlh4uWZh7rpd+P5mHE1CiQ=
+X-Received: by 2002:a05:6122:458a:b0:4d8:7339:4c35 with SMTP id
+ 71dfb90a1353d-4e218623869mr6210126e0c.13.1716472404389; Thu, 23 May 2024
+ 06:53:24 -0700 (PDT)
+MIME-Version: 1.0
+From: Atul Kahate <atulkahatecdac@gmail.com>
+Date: Thu, 23 May 2024 19:23:14 +0530
+Message-ID: <CADqgRy0KuAwbKu4Hptp6r4MFXd0nPN-ke37e-=x+jhas-NwGBg@mail.gmail.com>
+Subject: CUDA Array addition
+To: waghmaress162000@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000ee35f306191f5fef"
+
+--000000000000ee35f306191f5fef
+Content-Type: text/plain; charset="UTF-8"
+
+#include <stdio.h>
+#include <cuda.h>
+#include <cuda_runtime.h>
+
+#define M 4  // Array rows
+#define N 5  // Array columns
+
+__global__ void addArrays2D(int* d_result, int* d_array1, int* d_array2) {
+  int blockIdxX = blockIdx.x;
+  int blockIdxY = blockIdx.y;
+  int threadIdxX = threadIdx.x;
+  int threadIdxY = threadIdx.y;
+
+  int row = blockIdxY * blockDim.y + threadIdxY;
+  int col = blockIdxX * blockDim.x + threadIdxX;
+
+  // Check for valid element within array bounds
+  if (row < M && col < N) {
+    int result = d_array1[row * N + col] + d_array2[row * N + col];
+    d_result[row * N + col] = result;
+  }
+}
+
+int main() {
+  // Host memory for the arrays
+  int host_array1[M][N] = {
+    {1, 2, 3, 4, 5},
+    {6, 7, 8, 9, 10},
+    {11, 12, 13, 14, 15},
+    {16, 17, 18, 19, 20}
+  };
+  int host_array2[M][N] = {
+    {10, 20, 30, 40, 50},
+    {60, 70, 80, 90, 100},
+    {110, 120, 130, 140, 150},
+    {160, 170, 180, 190, 200}
+  };
+
+  // Allocate memory on device for the arrays
+  int* d_array1, *d_array2, *d_result;
+  cudaMalloc(&d_array1, M * N * sizeof(int));
+  cudaMalloc(&d_array2, M * N * sizeof(int));
+  cudaMalloc(&d_result, M * N * sizeof(int));
+
+  // Copy arrays from host to device
+  cudaMemcpy(d_array1, host_array1, M * N * sizeof(int),
+cudaMemcpyHostToDevice);
+  cudaMemcpy(d_array2, host_array2, M * N * sizeof(int),
+cudaMemcpyHostToDevice);
+
+  // Define grid and block sizes
+  int threadsPerBlockX = 16;
+  int threadsPerBlockY = 4;
+  dim3 threadsPerBlock(threadsPerBlockX, threadsPerBlockY, 1);
+  int numBlocksX = (N + threadsPerBlockX - 1) / threadsPerBlockX;
+  int numBlocksY = (M + threadsPerBlockY - 1) / threadsPerBlockY;
+  dim3 blocksPerGrid(numBlocksX, numBlocksY, 1);
+
+  // Launch the kernel
+  addArrays2D<<<blocksPerGrid, threadsPerBlock>>>(d_result, d_array1,
+d_array2);
+
+  // Allocate memory on host to store results
+  int host_result[M][N];
+
+  // Copy results back from device to host
+  cudaMemcpy(host_result, d_result, M * N * sizeof(int),
+cudaMemcpyDeviceToHost);
+
+  // Print the result array
+  printf("Resulting Array:\n");
+  for (int i = 0; i < M; ++i) {
+    for (int j = 0; j < N; ++j) {
+      printf("%d ", host_result[i][j]);
+    }
+    printf("\n");
+  }
+
+  // Free memory on device
+  cudaFree(d_array1);
+  cudaFree(d_array2);
+  cudaFree(d_result);
+
+  return 0;
+}
+
+--000000000000ee35f306191f5fef
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:trebuche=
+t ms,sans-serif;font-size:small;color:#0000ff">#include &lt;stdio.h&gt;<br>=
+#include &lt;cuda.h&gt;<br>#include &lt;cuda_runtime.h&gt;<br><br>#define M=
+ 4 =C2=A0// Array rows<br>#define N 5 =C2=A0// Array columns<br><br>__globa=
+l__ void addArrays2D(int* d_result, int* d_array1, int* d_array2) {<br>=C2=
+=A0 int blockIdxX =3D blockIdx.x;<br>=C2=A0 int blockIdxY =3D blockIdx.y;<b=
+r>=C2=A0 int threadIdxX =3D threadIdx.x;<br>=C2=A0 int threadIdxY =3D threa=
+dIdx.y;<br><br>=C2=A0 int row =3D blockIdxY * blockDim.y + threadIdxY;<br>=
+=C2=A0 int col =3D blockIdxX * blockDim.x + threadIdxX;<br><br>=C2=A0 // Ch=
+eck for valid element within array bounds<br>=C2=A0 if (row &lt; M &amp;&am=
+p; col &lt; N) {<br>=C2=A0 =C2=A0 int result =3D d_array1[row * N + col] + =
+d_array2[row * N + col];<br>=C2=A0 =C2=A0 d_result[row * N + col] =3D resul=
+t;<br>=C2=A0 }<br>}<br><br>int main() {<br>=C2=A0 // Host memory for the ar=
+rays<br>=C2=A0 int host_array1[M][N] =3D {<br>=C2=A0 =C2=A0 {1, 2, 3, 4, 5}=
+,<br>=C2=A0 =C2=A0 {6, 7, 8, 9, 10},<br>=C2=A0 =C2=A0 {11, 12, 13, 14, 15},=
+<br>=C2=A0 =C2=A0 {16, 17, 18, 19, 20}<br>=C2=A0 };<br>=C2=A0 int host_arra=
+y2[M][N] =3D {<br>=C2=A0 =C2=A0 {10, 20, 30, 40, 50},<br>=C2=A0 =C2=A0 {60,=
+ 70, 80, 90, 100},<br>=C2=A0 =C2=A0 {110, 120, 130, 140, 150},<br>=C2=A0 =
+=C2=A0 {160, 170, 180, 190, 200}<br>=C2=A0 };<br><br>=C2=A0 // Allocate mem=
+ory on device for the arrays<br>=C2=A0 int* d_array1, *d_array2, *d_result;=
+<br>=C2=A0 cudaMalloc(&amp;d_array1, M * N * sizeof(int));<br>=C2=A0 cudaMa=
+lloc(&amp;d_array2, M * N * sizeof(int));<br>=C2=A0 cudaMalloc(&amp;d_resul=
+t, M * N * sizeof(int));<br><br>=C2=A0 // Copy arrays from host to device<b=
+r>=C2=A0 cudaMemcpy(d_array1, host_array1, M * N * sizeof(int), cudaMemcpyH=
+ostToDevice);<br>=C2=A0 cudaMemcpy(d_array2, host_array2, M * N * sizeof(in=
+t), cudaMemcpyHostToDevice);<br><br>=C2=A0 // Define grid and block sizes<b=
+r>=C2=A0 int threadsPerBlockX =3D 16;<br>=C2=A0 int threadsPerBlockY =3D 4;=
+<br>=C2=A0 dim3 threadsPerBlock(threadsPerBlockX, threadsPerBlockY, 1);<br>=
+=C2=A0 int numBlocksX =3D (N + threadsPerBlockX - 1) / threadsPerBlockX;<br=
+>=C2=A0 int numBlocksY =3D (M + threadsPerBlockY - 1) / threadsPerBlockY;<b=
+r>=C2=A0 dim3 blocksPerGrid(numBlocksX, numBlocksY, 1);<br><br>=C2=A0 // La=
+unch the kernel<br>=C2=A0 addArrays2D&lt;&lt;&lt;blocksPerGrid, threadsPerB=
+lock&gt;&gt;&gt;(d_result, d_array1, d_array2);<br><br>=C2=A0 // Allocate m=
+emory on host to store results<br>=C2=A0 int host_result[M][N];<br><br>=C2=
+=A0 // Copy results back from device to host<br>=C2=A0 cudaMemcpy(host_resu=
+lt, d_result, M * N * sizeof(int), cudaMemcpyDeviceToHost);<br><br>=C2=A0 /=
+/ Print the result array<br>=C2=A0 printf(&quot;Resulting Array:\n&quot;);<=
+br>=C2=A0 for (int i =3D 0; i &lt; M; ++i) {<br>=C2=A0 =C2=A0 for (int j =
+=3D 0; j &lt; N; ++j) {<br>=C2=A0 =C2=A0 =C2=A0 printf(&quot;%d &quot;, hos=
+t_result[i][j]);<br>=C2=A0 =C2=A0 }<br>=C2=A0 =C2=A0 printf(&quot;\n&quot;)=
+;<br>=C2=A0 }<br><br>=C2=A0 // Free memory on device<br>=C2=A0 cudaFree(d_a=
+rray1);<br>=C2=A0 cudaFree(d_array2);<br>=C2=A0 cudaFree(d_result);<br><br>=
+=C2=A0 return 0;<br>}<br></div></div>
+
+--000000000000ee35f306191f5fef--
